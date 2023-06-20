@@ -1,1 +1,1 @@
-# decentralized_barter_market
+# Decentralized Barter Market
