@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="bundle.js"></script>
+    <script src="create.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 style = "font-family: times new roman"> <strong> Users Panel </strong> </h1>
+
+          <form id="createUser">
+            <div class="form-group">
+              <label for="NameInput" style = "font-family: times new roman; font-size: 14pt;" >First Name</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="UserNameInput" type="text" class="form-control"></input>
+            </div>
+
+            <div class="form-group">
+              <label for="lastNameInput" style = "font-family: times new roman; font-size: 14pt;" >Last Name</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="UserLastNameInput" type="text" class="form-control"></input>
+            </div>
+
+            <div class="form-group">
+              <label for="emailInput" style = "font-family: times new roman; font-size: 14pt;" >Email</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="UserEmailInput" type="email" class="form-control"></input>
+            </div>
+
+            <div class="form-group">
+              <label for="IDInput" style = "font-family: times new roman; font-size: 14pt;" >ID</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="IDInput" type="number" class="form-control"></input>
+            </div>
+	      <input type="checkbox" name="Terms&Condition" value="Terms" id="Check"> I agree to the <a href = "terms.html" target = "_blank">Terms & Condition</a></input><br /><br />
+            <button type="submit" class="btn btn-primary" style = "font-family: times new roman; font-size: 14pt;">Submit</button>
+          </form>
+
+          <div style = "font-family: times new roman; font-size: 14pt;"><span id="createUserResult"></span></div>
+
+          <form id="getUser">
+            <div class="form-group">
+              <label for="getUserInput" style = "font-family: times new roman; font-size: 14pt;" >Enter User Address</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="getUserInput" type="text" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary" style = "font-family: times new roman; font-size: 14pt;">Submit</button>
+          </form>
+          <div style = "font-family: times new roman; font-size: 14pt;"><span id="getUserResult"></span></div>
+
+
+          <form id="enterProductInformation">
+            <div class="form-group">
+              <label for="productName" style = "font-family: times new roman; font-size: 14pt;" >Product Name</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="ProductName" type="text" class="form-control"></input>
+            </div>
+
+            <div class="form-group">
+              <label for="productPrice" style = "font-family: times new roman; font-size: 14pt;" >Product price (in Wei)</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="ProductPrice" type="number" class="form-control"></input>
+            </div>
+
+            <div class="form-group">
+              <label for="productNumber" style = "font-family: times new roman; font-size: 14pt;" >Product Number</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="ProductNumber" type="number" class="form-control"></input>
+            </div>
+
+            <div class="form-group">
+              <label for="productType" style = "font-family: times new roman; font-size: 14pt;" >Product Type</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="ProductType" type="text" class="form-control"></input>
+              <label for="productCode" style = "font-family: times new roman; font-size: 14pt;" >Product Code</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="ProductCode" type="number" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary" style = "font-family: times new roman; font-size: 14pt;">Submit</button>
+          </form>
+
+          <div style = "font-family: times new roman; font-size: 14pt;"><span id="enterProductInformationResult"></span></div>
+
+          <form id="getId">
+            <div class="form-group">
+              <label for="yourProductName" style = "font-family: times new roman; font-size: 14pt;" >To find Id, Enter your product name</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="yourProductName" type="text" class="form-control"></input>
+            </div>
+
+            <div class="form-group">
+              <label for="yourProductType" style = "font-family: times new roman; font-size: 14pt;" >To find Id, Enter your product type</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="yourProductType" type="text" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary" style = "font-family: times new roman; font-size: 14pt;">Find ID</button>
+          </form>
+          <div style = "font-family: times new roman; font-size: 14pt;"><span id="getIdResult"></span></div>
+
+          <form id="queryProduct">
+            <div class="form-group">
+              <label for="reqProductType" style = "font-family: times new roman; font-size: 14pt;" >To find a product, Enter product type</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="reqProductType" type="text" class="form-control"></input>
+            </div>
+
+            <div class="form-group">
+              <label for="reqProductName" style = "font-family: times new roman; font-size: 14pt;" >To find a product, Enter product name</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="reqProductName" type="text" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary" style = "font-family: times new roman; font-size: 14pt;">Find Product</button>
+          </form>
+          <div style = "font-family: times new roman; font-size: 14pt;"><span id="queryProductResult"></span></div>
+
+          <form id="neededBalance">
+            <div class="form-group">
+              <label for="neededBalanceInput" style = "font-family: times new roman; font-size: 14pt;" >To show needed balance, Enter number</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="neededBalanceInput" type="number" class="form-control"></input>
+            </div>
+
+            <div class="form-group">
+              <label for="neededBalanceId" style = "font-family: times new roman; font-size: 14pt;" >To show needed balance, Enter Product Id</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="neededBalanceId" type="number" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary" style = "font-family: times new roman; font-size: 14pt;">Show Needed Balance</button>
+          </form>
+          <div style = "font-family: times new roman; font-size: 14pt;"><span id="neededBalanceResult"></span></div>
+
+          <form id="sendEtherToContract">
+            <div class="form-group">
+              <label for="Product-Number" style = "font-family: times new roman; font-size: 14pt;" >To send ether to contract, Enter number</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="Product-Number" type="number" class="form-control"></input>
+            </div>
+
+            <div class="form-group">
+              <label for="Product-Id" style = "font-family: times new roman; font-size: 14pt;" >To send ether to contract, Enter Product Id</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="Product-Id" type="number" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary" style = "font-family: times new roman; font-size: 14pt;">Send</button>
+          </form>
+          <div style = "font-family: times new roman; font-size: 14pt;"><span id="sendEtherToContractResult"></span></div>
+
+          <form id="cancelRequest">
+            <div class="form-group">
+              <label for="cancelRequestInput" style = "font-family: times new roman; font-size: 14pt;" >To cancel your request, Enter Product ID</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="cancelRequestInput" type="text" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary" style = "font-family: times new roman; font-size: 14pt;">Cancel</button>
+          </form>
+          <div style = "font-family: times new roman; font-size: 14pt;"><span id="cancelRequestResult"></span></div>
+
+          <form id="sendApproval">
+            <div class="form-group">
+              <label for="sendApprovalInput" style = "font-family: times new roman; font-size: 14pt;" >To approve your request, Enter Product ID</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="sendApprovalInput" type="text" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary" style = "font-family: times new roman; font-size: 14pt;">Approve</button>
+          </form>
+          <div style = "font-family: times new roman; font-size: 14pt;"><span id="sendApprovalResult"></span></div><br /><br />
+
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

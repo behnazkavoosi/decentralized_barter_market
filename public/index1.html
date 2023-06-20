@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="bundle.js"></script>
+    <script src="create.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h1 style = "font-family: times new roman"> <strong> Bazaar Panel </strong> </h1>
+
+          <form id="authenticateUser">
+            <div class="form-group">
+              <label for="UserID" style = "font-family: times new roman; font-size: 14pt;" >To approve the user, Enter User Id</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="UserID" type="number" class="form-control"></input>
+              <label for="UserAddress" style = "font-family: times new roman; font-size: 14pt;" >To approve the user, Enter User Address</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="UserAddress" type="text" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary" style = "font-family: times new roman; font-size: 14pt;">Submit</button>
+          </form>
+
+          <div style = "font-family: times new roman; font-size: 14pt;"><span id="authenticateUserResult"></span></div>
+
+          <form id="acceptProductRequest">
+            <div class="form-group">
+              <label for="acceptProductRequestInput" style = "font-family: times new roman; font-size: 14pt;" >To approve the product, Enter Product Code</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="_acceptProductRequestInput" type="number" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary" style = "font-family: times new roman; font-size: 14pt;">Submit</button>
+          </form>
+
+          <div style = "font-family: times new roman; font-size: 14pt;"><span id="acceptProductRequestResult"></span></div>
+
+          <form id="showCredit">
+            <div class="form-group">
+              <label for="showCreditInput" style = "font-family: times new roman; font-size: 14pt;" >Enter Product ID to charge account</label>
+              <input style = "font-family: times new roman; font-size: 13pt;" id="showCreditInput" type="text" class="form-control"></input>
+            </div>
+            <button type="submit" class="btn btn-primary" style = "font-family: times new roman; font-size: 14pt;">Submit</button>
+          </form>
+          <div style = "font-family: times new roman; font-size: 14pt;"><span id="showCreditResult"></span></div>
+
+          <form id="checkTimeStamp">
+            <div class="form-group">
+              <label for="checkTimeStampInput" style = "font-family: times new roman; font-size: 14pt;" >For time stamp checking, click on Submit</label><br />
+            <button type="submit" class="btn btn-primary" style = "font-family: times new roman; font-size: 14pt;">Submit</button>
+          </form>
+          <div style = "font-family: times new roman; font-size: 14pt;"><span id="checkTimeStampResult"></span></div><br />
+
+          <form id="checkDifference">
+            <div class="form-group">
+              <label for="sendApprovalInput" style = "font-family: times new roman; font-size: 14pt;" >If you want to check that any product is out of stock or not, please click on check Out-Of-Stock products. It will pay rest of the money to the owners.</label>
+            </div>
+            <button type="submit" class="btn btn-primary" style = "font-family: times new roman; font-size: 14pt;">check Out-Of-Stock products</button>
+          </form>
+          <div style = "font-family: times new roman; font-size: 14pt;"><span id="checkDifferenceResult"></span></div><br /><br />
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
